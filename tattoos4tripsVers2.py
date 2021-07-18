@@ -1,7 +1,5 @@
 from random import randint
 
-from PIL import Image
-
 hobbiesDict = {1: "hiking", 2: "art", 3: "cooking", 4: "swimming", 5: "gardening", 6: "boating", 7: "photography",
                8: "people-watching", 9: "reading", 10: "cultural exploration"}
 
@@ -220,11 +218,10 @@ def countryQuiz():
 
     match = countTag(destinationMods)[0]
 
-    return match
+    print("Based on you quiz results, you should go to " + match + " !")
 
 
-# intro()
-#hobbyChecker()
+intro()
+hobbyChecker()
 print(countryQuiz())
 
-#countTattoo(adventureTattoo, adventureTattooCountOg)
