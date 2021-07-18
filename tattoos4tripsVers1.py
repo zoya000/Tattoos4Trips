@@ -17,7 +17,6 @@ destinationTags = {'Paris': ['exploring', 'love', 'urban', 'ground'], 'Bahamas':
                    'Alaska': ['exploring', 'rural', 'h2o', 'sky'],
                    'Switzerland': ['adventurous', 'rural', 'love', 'sky']}
 
-#tattoo1 = Image.open('/Users/zoyabrahimzadeh/Downloads/cut_20575_20210216064109_cyan.jpeg')
 tattoo1 = [1, "mountains or a cliff side "]
 tattoo2 = [2, "ski goggles reflecting a natural landscape"]
 tattoo3 = [3, "a compass based design (north, east, south, west)"]
