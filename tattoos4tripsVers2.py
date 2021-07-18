@@ -71,7 +71,7 @@ tattoosOrg = {"adventure": "", "lovingL": "", 'area': "", "space": ""}
 
 
 def intro():
-    print("hello! welcome to tattoos4trips. this is a demo of a tattoo based vacation planner.")
+    print("Hello! Welcome to Tattoos4Trips. This is a demo of a tattoo based vacation planner.")
     print(
         "Use this to find your next vacation destination by choosing the tattoos you feel resonates with you or who "
         "you want to be!")
@@ -80,7 +80,7 @@ def intro():
     input("\n \n \nare you ready to begin? \n \n(press any key to continue)")
 
 
-# noinspection PyPep8Naming,PyUnusedLocal
+# Uses any hobbies user may have to optimize results
 def hobbyChecker():
     hobbyCheck = input("do you have any hobbies you enjoy doing? \n-of which could possibly be factored into choosing "
                        "your next destination \n \n(yes or no)\n")
@@ -104,13 +104,13 @@ def hobbyChecker():
 
 
 # collects information about the users' tattoo preferences, first stage of the quiz
-# noinspection PyPep8Naming,PyUnusedLocal,PyUnboundLocalVariable
+
 def countTattoo(Tattoo, TattooCount):
     three = False
     while not three:
         for Key, Value in Tattoo.items():
             print(str(["{key} - {tattoo}".format(key=Tat[0], tattoo=Tat[1]) for Tat in Value]) + "\n")
-                #Tat.show()
+              
 
         topTatsRaw = input("\nwhich three would you want the most?\n(separate using spaces)\n") + " "
 
@@ -132,14 +132,13 @@ def countTattoo(Tattoo, TattooCount):
 
             if i in str(value[0][0]):
                 TattooCount[key] += 1
-    print(topTats)
-    print(TattooCount)
+    
     return TattooCount
 
     # the function which determines which pair has the most points
 
 
-# noinspection PyPep8Naming
+
 def countTag(TattooCount):
     # keeps track of the current highest points and which tag has it
     highest = ["none", 0]
@@ -171,7 +170,7 @@ def countTag(TattooCount):
     return highest
 
 
-# noinspection PyUnusedLocal,PyPep8Naming
+
 def countryQuiz():
     input("Now lets start the cool stuff (actual tattoo quiz), yeah?\n")
 
@@ -214,8 +213,7 @@ def countryQuiz():
                 # using destinationMods since hobbies are playing in here, their impact will now be implemented
                 destinationMods[dKey] += 1
 
-    print(destinationMods)
-
+    
     match = countTag(destinationMods)[0]
 
     print("Based on you quiz results, you should go to " + match + " !")
@@ -223,5 +221,5 @@ def countryQuiz():
 
 intro()
 hobbyChecker()
-print(countryQuiz())
+countryQuiz()
 
